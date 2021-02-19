@@ -30,7 +30,7 @@
 }
 @media (min-width: 1200px) {
     .container {
-        max-width: 1200px
+        max-width: 1250px
     }
 }
 body {
@@ -756,7 +756,7 @@ main .reviews .items {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    grid-template-columns: repeat(3, 366px)
+    grid-template-columns: repeat(5, 220px)
 }
 main .reviews .items .item {
     text-align: center;
@@ -765,16 +765,16 @@ main .reviews .items .item {
     border-style: solid;
     -webkit-border-radius: 4px;
     border-radius: 4px;
-    background-color: #fff;
-    width: 366px;
+    
+    
     height: 100%;
-    padding: 0 30px 50px
+    
 }
 main .reviews .items .item img {
     width: 186px;
     height: 187px;
     border-style: solid;
-    border-width: 7px;
+    border-width: 1px;
     border-color: #fff;
     -webkit-border-radius: 50%;
     border-radius: 50%;
@@ -938,10 +938,10 @@ footer a:hover {
 }
 footer a.link-tel {
     font-size: 18px;
-    margin-bottom: 5px
+    
 }
 footer a.link-mail {
-    font-size: 16px
+    font-size: 14px
 }
 footer a img {
     margin-right: 13px

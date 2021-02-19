@@ -8,8 +8,17 @@ $(function() {
 		$('#square').val((price/733).toFixed(2))
 	});
 
-
-    $('.up').click(function(e){
+	$('.ask-blocks .item h4').click(function(){
+		var thisH4 = $(this),
+			thisSpan = $('div', $(this).parent()),
+			outherH4 = $('.ask-blocks .item h4').not(thisH4),
+			outherSpan = $('.ask-blocks .item div').not(thisSpan);
+		outherH4.removeClass('active');
+		outherSpan.hide().removeClass('active');
+		thisH4.toggleClass('active');
+		thisSpan.fadeToggle().toggleClass('active');
+	});
+        $('.up').click(function(e){
     	e.preventDefault();
     	$('html,body').animate({
           scrollTop: 0

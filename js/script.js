@@ -1,46 +1,14 @@
 $(function() {
 	$('#square').keyup(function(){
 		var square = $(this).val();
-		$('#price').val(square*1100)
+		$('#price').val(square*733)
 	});
 	$('#price').keyup(function(){
 		var price = $(this).val();
-		$('#square').val((price/1100).toFixed(2))
+		$('#square').val((price/733).toFixed(2))
 	});
 
-	$('.ask-blocks .item h4').click(function(){
-		var thisH4 = $(this),
-			thisSpan = $('div', $(this).parent()),
-			outherH4 = $('.ask-blocks .item h4').not(thisH4),
-			outherSpan = $('.ask-blocks .item div').not(thisSpan);
-		outherH4.removeClass('active');
-		outherSpan.hide().removeClass('active');
-		thisH4.toggleClass('active');
-		thisSpan.fadeToggle().toggleClass('active');
-	});
-    ymaps.ready(init);
-    var myMap, 
-        myPlacemark;
 
-    function init(){ 
-		if( ($(window).width() <= 767)  ) {
-	        myMap = new ymaps.Map("map", {
-		            center: [55.75399400, 37.62209300],
-		            zoom: 8
-		        }); 
-		} else {
-	        myMap = new ymaps.Map("map", {
-	            center: [55.75399400, 37.62209300],
-	            zoom: 8
-	        }); 			
-		}
-
-        myPlacemark = new ymaps.Placemark([55.75399400, 37.62209300], {
-            hintContent: 'Алматы',
-            balloonContent: 'г. Алматы, пр. Достык, д. 291/3'
-        });
-        myMap.geoObjects.add(myPlacemark);
-    }
     $('.up').click(function(e){
     	e.preventDefault();
     	$('html,body').animate({
